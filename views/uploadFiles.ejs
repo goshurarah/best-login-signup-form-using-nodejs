@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- bootstrap cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        form {
+            color: aliceblue;
+            background-color: darkgray;
+            border: 2px solid khaki;
+            border-radius: 5rem;
+            border-width: 5rem;
+            width: 40rem;
+            margin: 10rem auto;
+        }
+
+        #file {
+            padding: 2rem;
+        }
+
+        #submit-btn {
+            color: aliceblue;
+            background: purple;
+            border-radius: 40rem;
+            border: none;
+            padding: 1rem;
+            display: block;
+            margin-left: 17rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+        <%- include('components/styles.ejs')%>
+
+</head>
+
+<body>
+    <%- include('components/navbar.ejs')%>
+
+        <form action="/uploadFiles" method="post" enctype="multipart/form-data">
+            <input id="file" type="file" name="file" />
+            <input id="submit-btn" type="submit" value="SUBMIT FILE">
+        </form>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<style>
+    body {
+        background-color: blanchedalmond;
+        border: 1rem solid rgb(187, 185, 65);
+        height: 100vh;
+        /* border-style: 4rem dotted solid red; */
+    }
+
+    .register {
+        background: -webkit-linear-gradient(left, #b92568, #e7c327);
+        margin-top: 1.5%;
+        padding: 3%;
+    }
+
+    .register-left {
+        text-align: center;
+        color: #fff;
+        margin-top: 4%;
+    }
+
+    .register-left input {
+        border: none;
+        border-radius: 1.5rem;
+        padding: 2%;
+        width: 60%;
+        background: #f8f9fa;
+        font-weight: bold;
+        color: #383d41;
+        margin-top: 30%;
+        margin-bottom: 3%;
+        cursor: pointer;
+    }
+
+    .register-right {
+        background: #f8f9fa;
+        border-top-left-radius: 10% 50%;
+        border-bottom-left-radius: 10% 50%;
+        border-top-right-radius: 10% 50%;
+        border-bottom-right-radius: 10% 50%;
+    }
+
+    .register-left img {
+        margin-top: 15%;
+        margin-bottom: 5%;
+        width: 25%;
+        -webkit-animation: mover 2s infinite alternate;
+        animation: mover 1s infinite alternate;
+    }
+
+    @-webkit-keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+
+    @keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+
+    .register-left p {
+        font-weight: lighter;
+        padding: 12%;
+        margin-top: -9%;
+    }
+
+    .register .register-form {
+        padding: 10%;
+        margin-top: 10%;
+    }
+
+    .btnRegister {
+        float: right;
+        margin-top: 10%;
+        border: none;
+        border-radius: 1.5rem;
+        padding: 2%;
+        background: #0062cc;
+        color: #fff;
+        font-weight: 600;
+        width: 50%;
+        cursor: pointer;
+    }
+
+    .register .nav-tabs {
+        margin-top: 3%;
+        border: none;
+        background: #0062cc;
+        border-radius: 1.5rem;
+        width: 28%;
+        float: right;
+    }
+
+    .register .nav-tabs .nav-link {
+        padding: 2%;
+        height: 34px;
+        font-weight: 600;
+        color: #fff;
+        border-top-right-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+    }
+
+    .register .nav-tabs .nav-link:hover {
+        border: none;
+    }
+
+    .register .nav-tabs .nav-link.active {
+        width: 100px;
+        color: #0062cc;
+        border: 2px solid #0062cc;
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+    }
+
+    .register-heading {
+        text-align: center;
+        margin-top: 8%;
+        margin-bottom: -15%;
+        color: #495057;
+    }
+
+    #loginButton {
+        margin-top: 28%;
+        margin-right: 25%;
+    }
+
+    #loginButton:hover {
+        background-color: blueviolet;
+    }
+
+    #registerButton {
+        margin-right: 80%;
+    }
+
+    #registerButton:hover {
+        background-color: blueviolet;
+    }
+
+    /* navbar styles */
+    :root {
+        --main-bg: #556b73;
+        --main-color: #0097e6;
+    }
+
+    /* snowflake rotation */
+    @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
+
+    .fa-snowflake {
+        transition: all;
+        animation: rotation 2s linear infinite;
+        color: var(--main-color);
+    }
+
+    .main_menu {
+        background-color: var(--main-bg);
+        box-shadow: 0px 10px 8px #878686;
+    }
+
+    .navbar {
+        color: #fff;
+        background-color: var(--main-bg);
+
+    }
+
+    .navbar li {
+        margin-left: 2rem;
+    }
+
+    .navbar a {
+        color: #fff;
+    }
+
+    .navbar a:hover {
+        color: var(--main-color);
+    }
+</style>
