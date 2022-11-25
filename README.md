@@ -22,3 +22,7 @@ npm start
 # Env file 
 
 create .env file in root directory and set PORT=any value, SECRET_KEY=32 character any value
+
+# Uplode Files:
+
+in the root directory, you must be created a folder to upload files in it that has a name 'uploaded files'
